@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "name": "test-db",
+    "user": "root",
+    "password": ""
+  },
+  "twitter_api_key": "u4l8uKjpqdxi5VEm7HBGllHLF",
+  "twitter_api_secret": "bVMLPj9oUFQXQSCdEFMHQz4PCPa226BYS198lhyhTGL5QbBUpz",
+  "callback_url": "http://localhost:3000/auth/twitter/callback",
+  "use_database":	"true"
+}
