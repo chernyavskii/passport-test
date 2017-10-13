@@ -5,8 +5,8 @@
     "user": "root",
     "password": ""
   },
-  "facebook_api_key": "816350911859804",
-  "facebook_api_secret": "290436783f5d10ee92d5ec081cd6939c",
+  "facebook_api_key": "1733756290265795",
+  "facebook_api_secret": "5782395af9ecfbbd2aea7e6975d3e428",
   "callback_url": "http://localhost:3000/auth/facebook/callback",
   "use_database":	"true"
 }
