@@ -15,10 +15,10 @@ module.exports = (indexService, config, passport) => {
         res.render('index',{user:req.user});
     });
 
-    router.get('/auth/twitter',passport.authenticate('twitter'));
+    router.get('/auth/facebook',passport.authenticate('facebook'));
 
-    router.get('/auth/twitter/callback',
-        passport.authenticate('twitter',{successRedirect: '/account',failureRedirect: '/'}),
+    router.get('/auth/facebook/callback',
+        passport.authenticate('facebook',{successRedirect: '/account',failureRedirect: '/'}),
         function (req,res) {
             res.redirect('/account');
         });

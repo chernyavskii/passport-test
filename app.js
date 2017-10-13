@@ -8,7 +8,7 @@ const errors = require('./utils/errors');
 const userService = require('./services/user')(dbcontext.user,errors);
 
 const passport = require('passport');
-const TwitterStrategy = require('passport-twitter').Strategy;
+const FacebookStrategy = require('passport-facebook').Strategy;
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 

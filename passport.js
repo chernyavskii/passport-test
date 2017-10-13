@@ -1,5 +1,5 @@
 module.exports = function(passport,userRepository,config){
-    var TwitterStrategy = require('passport-twitter').Strategy;
+    var FacebookStrategy = require('passport-facebook').Strategy;
 
     passport.serializeUser(function(user, done) {
         done(null, user);
@@ -9,9 +9,9 @@ module.exports = function(passport,userRepository,config){
         done(null,obj);
     });
 
-    passport.use( new TwitterStrategy({
-            consumerKey: config.twitter_api_key,
-            consumerSecret: config.twitter_api_secret,
+    passport.use( new FacebookStrategy({
+            clientID: config.facebook_api_key,
+            clientSecret: config.facebook_api_secret,
             callbackURL: config.callback_url
         },
         function (token,tokenSecret,profile,done) {
